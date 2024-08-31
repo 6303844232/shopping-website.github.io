@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="product-details" class="container py-5">
+        <a href="javascript:history.back()" class="btn btn-secondary mb-3">
+            <i class="fas fa-arrow-left"></i> 
+        </a>
+    <section id="page-header" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>#stayhome</h2>
+            <p>Save more with coupons & up to 70% off!</p>
+        </div>
+    </section>
+    <section id="contact-details" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4 class="text-primary">GET IN TOUCH</h4>
+                    <h2 class="mb-4">Visit one of our agency locations or contact us today</h2>
+                    <h3>Head Office</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map me-3"></i>
+                            <p class="mb-0">Arbor Hill Apartment, MI, United States</p>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope me-3"></i>
+                            <p class="mb-0">shop@gmail.com</p>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3"></i>
+                            <p class="mb-0">+1 314-924-0131</p>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="far fa-clock me-3"></i>
+                            <p class="mb-0">Monday to Saturday: 9am to 10pm</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.209886654621!2d-85.18417942422757!3d42.3380483364925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8817f14dd1cc1e55%3A0x371eff0cb52e92f9!2sArbor%20Hill%20Apartments!5e0!3m2!1sen!2sus!4v1723677794668!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form-details" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <form id="contactForm">
+                        <h4 class="text-primary">LEAVE A MESSAGE</h4>
+                        <h2 class="mb-4">We Love to hear from you</h2>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                        Message sent successfully!
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="d-flex align-items-center">
+                        <img src="keerthi (2).png" alt="Keerthi" class="rounded-circle me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div>
+                            <h5>Keerthi</h5>
+                            <p class="mb-0">Senior Marketing Manager<br>Phone: +1 314-9240131<br>Email: shop@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="newsletter" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4>Sign Up For Newsletter</h4>
+                    <p>Get E-mail updates about our latest shop and special offers</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address" required>
+                        <button class="btn btn-primary" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h4>Contact</h4>
+                    <p>Address: Hill Apartments</p>
+                    <p>Phone: (+1) 314-924-0131</p>
+                    <p>Hours: 10am to 10pm, mon-sun</p>
+                    <h4 class="mt-4">Follow us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Delivery Information</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>My Account</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Sign In</a></li>
+                        <li><a href="#" class="text-light">View Cart</a></li>
+                        <li><a href="#" class="text-light">My Wishlist</a></li>
+                        <li><a href="#" class="text-light">Track My Order</a></li>
+                        <li><a href="#" class="text-light">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <img src="pay1.jpg" alt="App Store" class="img-fluid mb-2">
+                    <p>Secured Payment Gateways</p>
+                    <img src="pay2.png" alt="Payment Gateways" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="bg-secondary text-center text-light py-3">
+        <p class="mb-0">&copy; 2023, Keerthi etc - HTML CSS Ecommerce Website</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+    
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent the form from actually submitting
+    
+                // Here you would typically send the form data to a server
+                // For this example, we'll just simulate a successful submission
+    
+                // Hide the form
+                form.style.display = 'none';
+    
+                // Show the success message
+                successMessage.style.display = 'block';
+    
+                // Optional: Reset form fields
+                form.reset();
+    
+                // Optional: Hide success message and show form again after 3 seconds
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                    form.style.display = 'block';
+                }, 3000);
+            });
+        });
+        </script>
+    </body>
+    </html>
+    
+      
+    <script src="script.js"></script>
+</body>
+</html>

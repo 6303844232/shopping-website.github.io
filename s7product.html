@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="product-details" class="container py-5">
+        <a href="javascript:history.back()" class="btn btn-secondary mb-3">
+            <i class="fas fa-arrow-left"></i> 
+        </a>
+    <section id="prodetails" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <div class="main-image-container">
+                    <img src="photo8.jpg" id="MainImg" alt="Main Product Image" class="img-fluid">
+                    <div class="small-img-row">
+                        <img src="photo8.jpg" class="small-img" alt="Small Product Image 1">
+                        <img src="photo8 sub1.jpg" class="small-img" alt="Small Product Image 2">
+                        <img src="photo8 sub2.jpg" class="small-img" alt="Small Product Image 3">
+                        <img src="photo8 sub3.jpg" class="small-img" alt="Small Product Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h4>PJ PAUL JONES Mens Polo Shirts Textured Knit V-neck Summer Shirts</h4>
+                <h2 class="mb-3">$22.45</h2>
+                <div class="size-select-container">
+                    <select class="form-select mb-3 size-select">
+                        <option selected>Select size</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                        <option>Small</option>
+                        <option>Large</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <input type="number" class="form-control me-2 quantity-input" value="1" min="1">
+                    <button class="btn btn-primary" type="button" id="addToCartBtn">Add to Cart</button>
+                </div>
+                <h4 class="mt-4">Product Details</h4>
+                <ul class="list-unstyled text-start">
+                    <li><strong>Fabric type:</strong>  95% Viscose + 5%Polyamide
+                    </li>
+                    <li><strong>Origin:</strong>Imported</li>
+                    <li><strong>Care Instruction:</strong> Machine wash</li>
+                    <li><strong>Closure type:</strong>Pull on</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="featured-products" class="container py-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="8.1.jpg" class="card-img-top" alt="Black shirt">
+                    <div class="card-body d-flex flex-column">
+                      
+                        <h5 class="card-title">Pudolla Men's Workout Athletic Pants Elastic Waist Jogging Running Pants for Men with Zipper Pockets </h5>
+                        <div class="mb-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">$32.95</h4>
+                        <a href="#" class="btn btn-outline-primary mt-auto"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="8.2.jpg" class="card-img-top" alt="Black shirt">
+                    <div class="card-body d-flex flex-column">
+                      
+                        <h5 class="card-title">Armani Exchange Men's Slim Fit Cotton Piquet Heathered Polo </h5>
+                        <div class="mb-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">$30.30</h4>
+                        <a href="#" class="btn btn-outline-primary mt-auto"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="8.3.jpg" class="card-img-top" alt="Black shirt">
+                    <div class="card-body d-flex flex-column">
+                       
+                        <h5 class="card-title">Mens Fashion Polo Shirt Short/Long-Sleeve Slim Fit Henley T-Shirts Pique Cotton Clothes </h5>
+                        <div class="mb-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">$23.98</h4>
+                        <a href="#" class="btn btn-outline-primary mt-auto"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100">
+                    <img src="8.4.jpg" class="card-img-top" alt="Black shirt">
+                    <div class="card-body d-flex flex-column">
+                      
+                        <h5 class="card-title">Mens Slim Fit T-Shirt Contrast Color Tee Gradient Stitching Short-Sleeve Cotton Tops </h5>
+                        <div class="mb-2">
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+                        <h4 class="mb-3">$23.98</h4>
+                        <a href="#" class="btn btn-outline-primary mt-auto"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 5 -->
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="newsletter" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4>Sign Up For Newsletter</h4>
+                    <p class="mb-0">Get E-mail updates about our latest shop and special offers</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address" required>
+                        <button class="btn btn-primary" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h4>Contact</h4>
+                    <p>Address: Hill Apartments</p>
+                    <p>Phone: (+1) 314-924-0131</p>
+                    <p>Hours: 10am to 10pm, mon-sun</p>
+                    <h4 class="mt-4">Follow us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Delivery Information</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>My Account</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Sign In</a></li>
+                        <li><a href="#" class="text-light">View Cart</a></li>
+                        <li><a href="#" class="text-light">My Wishlist</a></li>
+                        <li><a href="#" class="text-light">Track My Order</a></li>
+                        <li><a href="#" class="text-light">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <img src="pay1.jpg" alt="App Store" class="img-fluid mb-2">
+                    
+                    <p>Secured Payment Gateways</p>
+                    <img src="pay2.png" alt="Payment Gateways" class="img-fluid">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="bg-secondary text-center text-light py-3">
+        <p class="mb-0">&copy; 2023, Keerthi etc - HTML CSS Ecommerce Website</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var MainImg = document.getElementById("MainImg");
+            var smallImgs = document.querySelectorAll(".small-img");
+    
+            // Add click event listeners to small images
+            smallImgs.forEach(function(img) {
+                img.onclick = function() {
+                    MainImg.src = this.src;
+                }
+            });
+    
+            // Initialize variables to track the selected image
+            let selectedImage = MainImg.src;
+             // Add to Cart functionality
+             document.getElementById('addToCartBtn').addEventListener('click', function() {
+                const product = {
+                    name: document.querySelector('#prodetails h4').textContent,
+                    price: document.querySelector('#prodetails h2').textContent,
+                    image: MainImg.src,
+                    quantity: parseInt(document.querySelector('#prodetails input[type="number"]').value)
+                };
+    
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+    
+                alert('Product added to cart!');
+                window.location.href = 'cart.html';
+            });
+    
+            // Quantity input validation
+            document.querySelector('#prodetails input[type="number"]').addEventListener('change', function() {
+                if (this.value < 1) {
+                    this.value = 1;
+                }
+            });
+    
+            // Optional: Image zoom functionality for larger screens
+            if (window.innerWidth > 768) {
+                MainImg.addEventListener('mousemove', function(e) {
+                    const zoomer = e.currentTarget;
+                    let offsetX, offsetY, x, y;
+                    
+                    e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX;
+                    e.offsetY ? offsetY = e.offsetY : offsetY = e.touches[0].pageY;
+                    
+                    x = offsetX / zoomer.offsetWidth * 100;
+                    y = offsetY / zoomer.offsetHeight * 100;
+                    
+                    zoomer.style.backgroundPosition = x + '% ' + y + '%';
+                });
+            }
+        });
+        
+            // Add to Cart function for featured products
+            document.querySelectorAll('#featured-products .btn-outline-primary').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const card = this.closest('.card');
+                    addToCart({
+                        name: card.querySelector('.card-title').textContent,
+                        price: card.querySelector('h4').textContent,
+                        image: card.querySelector('img').src,
+                        quantity: 1
+                    });
+                });
+            });
+        
+            function addToCart(product) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert('Product added to cart!');
+                console.log('Current cart:', JSON.parse(localStorage.getItem('cart')));
+                window.location.href = 'cart.html'; // Redirect to cart page
+            }
+        
+        </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

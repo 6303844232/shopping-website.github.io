@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="product-details" class="container py-5">
+        <a href="javascript:history.back()" class="btn btn-secondary mb-3">
+            <i class="fas fa-arrow-left"></i> 
+        </a>
+    <section id="page-header" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>#stayhome</h2>
+            <p>Save more with coupons & up to 70% off!</p>
+        </div>
+    </section>
+
+    <section id="cart" class="py-5">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Remove</th>
+                            <th>Image</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItemsContainer">
+                        <!-- Cart items will be dynamically inserted here -->
+                        <tr>
+                            <td><button class="btn btn-danger btn-sm">Remove</button></td>
+                            <td><img src="blog1.jpg" alt="Product Image" class="img-fluid cart-image"></td>
+                            <td>Product Name</td>
+                            <td>$20.00</td>
+                            <td><input type="number" class="form-control" value="1" min="1"></td>
+                            <td>$20.00</td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-danger btn-sm">Remove</button></td>
+                            <td><img src="blog2.jpg" alt="Product Image" class="img-fluid cart-image"></td>
+                            <td>Product Name</td>
+                            <td>$15.00</td>
+                            <td><input type="number" class="form-control" value="1" min="1"></td>
+                            <td>$15.00</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart-add" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Apply Coupon</h3>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter Your Coupon">
+                                <button class="btn btn-outline-secondary" type="button">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Cart Totals</h3>
+                            <table class="table">
+                                <tr>
+                                    <td>Cart Subtotal</td>
+                                    <td id="cartSubtotal">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td id="cartTotal"><strong>$0.00</strong></td>
+                                </tr>
+                            </table>
+                            <button class="btn btn-primary w-100" onclick="proceedToCheckout()">Proceed to checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h4>Contact</h4>
+                    <p>Address: Hill Apartments</p>
+                    <p>Phone: (+1) 314-924-0131</p>
+                    <p>Hours: 10am to 10pm, mon-sun</p>
+                    <h4 class="mt-4">Follow us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Us</a></li>
+                        <li><a href="#" class="text-light">Delivery Information</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>My Account</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Sign In</a></li>
+                        <li><a href="#" class="text-light">View Cart</a></li>
+                        <li><a href="#" class="text-light">My Wishlist</a></li>
+                        <li><a href="#" class="text-light">Track My Order</a></li>
+                        <li><a href="#" class="text-light">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <img src="pay1.jpg" alt="App Store" class="img-fluid mb-2">
+                    
+                    <p>Secured Payment Gateways</p>
+                    <img src="pay2.png" alt="Payment Gateways" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="bg-secondary text-center text-light py-3">
+        <p class="mb-0">&copy; 2023, Keerthi etc - HTML CSS Ecommerce Website</p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+
+        <script>
+            function displayCart() {
+                const cartItemsContainer = document.getElementById('cartItemsContainer');
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let totalPrice = 0;
+        
+                cartItemsContainer.innerHTML = '';
+        
+                cart.forEach((item, index) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="text-center"><button onclick="removeItem(${index})" class="btn btn-sm btn-danger"><i class="far fa-times-circle"></i></button></td>
+                        <td class="text-center"><img src="${item.image}" alt="${item.name}" class="cart-thumbnail"></td>
+                        <td class="text-center">${item.name}</td>
+                        <td class="text-center">${item.price}</td>
+                        <td class="text-center"><input type="number" value="${item.quantity}" min="1" onchange="updateQuantity(${index}, this.value)" class="form-control quantity-input"></td>
+                        <td class="text-center">$${(parseFloat(item.price.replace('$', '')) * item.quantity).toFixed(2)}</td>
+                    `;
+                    cartItemsContainer.appendChild(row);
+        
+                    totalPrice += parseFloat(item.price.replace('$', '')) * item.quantity;
+                });
+        
+                document.getElementById('cartSubtotal').textContent = `$${totalPrice.toFixed(2)}`;
+                document.getElementById('cartTotal').textContent = `$${totalPrice.toFixed(2)}`;
+            }
+        
+            function removeItem(index) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.splice(index, 1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                displayCart();
+            }
+        
+            function updateQuantity(index, newQuantity) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart[index].quantity = parseInt(newQuantity);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                displayCart();
+            }
+        
+            function proceedToCheckout() {
+                // Implement checkout logic here
+                alert('Proceeding to checkout...');
+                window.location.href = 'checkout.html';
+                
+            }
+            
+        
+            // Display cart when the page loads
+            displayCart();
+
+            /*shop.html*/
+
+            
+        </script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="payment-details">
+                <h3 class="text-center mb-4">Payment Information</h3>
+                <form id="payment-form" action="payment-confirmation.html" method="POST">
+                    <div class="mb-3">
+                        <label for="card-name" class="form-label">Name on Card</label>
+                        <input type="text" class="form-control" id="card-name" name="card-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="card-number" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="card-number" name="card-number" required>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="exp-date" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control" id="exp-date" name="exp-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv" required>
+                        </div>
+                    </div>
+                    <button id="pay-button" type="button" class="btn btn-primary w-100" onclick="submitForm()">Pay $0.00</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h4>Contact</h4>
+                <p>Address: Hill Apartments</p>
+                <p>Phone: (+1) 314-924-0131</p>
+                <p>Hours: 10am to 10pm, mon-sun</p>
+                <h4 class="mt-4">Follow us</h4>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>About</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">About Us</a></li>
+                    <li><a href="#" class="text-light">Delivery Information</a></li>
+                    <li><a href="#" class="text-light">Privacy Policy</a></li>
+                    <li><a href="#" class="text-light">Terms and Conditions</a></li>
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>My Account</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Sign In</a></li>
+                    <li><a href="#" class="text-light">View Cart</a></li>
+                    <li><a href="#" class="text-light">My Wishlist</a></li>
+                    <li><a href="#" class="text-light">Track My Order</a></li>
+                    <li><a href="#" class="text-light">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <img src="pay1.jpg" alt="App Store" class="img-fluid mb-2">
+               
+                <p>Secured Payment Gateways</p>
+                <img src="pay2.png" alt="Payment Gateways" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bg-secondary text-center text-light py-3">
+    <p class="mb-0">&copy; 2023, Keerthi etc - HTML CSS Ecommerce Website</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+<script>
+    function displayCartTotal() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let totalPrice = 0;
+
+        cart.forEach(item => {
+            totalPrice += parseFloat(item.price.replace('$', '')) * item.quantity;
+        });
+
+        const payButton = document.getElementById('pay-button');
+        payButton.textContent = `Pay $${totalPrice.toFixed(2)}`;
+    }
+
+    window.onload = displayCartTotal;
+
+    function validateForm() {
+        const cardName = document.getElementById('card-name').value.trim();
+        const cardNumber = document.getElementById('card-number').value.trim();
+        const expDate = document.getElementById('exp-date').value.trim();
+        const cvv = document.getElementById('cvv').value.trim();
+
+        // Simple validation rules
+        const nameRegex = /^[a-zA-Z\s]+$/;
+        const cardNumberRegex = /^[0-9]{16}$/;
+        const expDateRegex = /^(0[1-9]|1[0-2])\/([0-9]{2})$/;
+        const cvvRegex = /^[0-9]{3,4}$/;
+
+        let isValid = true;
+        let errorMessage = '';
+
+        if (!nameRegex.test(cardName)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid name on the card.\n';
+        }
+
+        if (!cardNumberRegex.test(cardNumber)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid 16-digit card number.\n';
+        }
+
+        if (!expDateRegex.test(expDate)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid expiry date (MM/YY).\n';
+        }
+
+        if (!cvvRegex.test(cvv)) {
+            isValid = false;
+            errorMessage += 'Please enter a valid CVV (3 or 4 digits).\n';
+        }
+
+        if (!isValid) {
+            alert(errorMessage);
+        }
+
+        return isValid;
+    }
+
+    function submitForm() {
+        if (validateForm()) {
+            // Proceed with payment processing
+          
+            localStorage.removeItem('cart');
+            window.location.href = 'paymentconfirmation.html';
+        }
+    }
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
